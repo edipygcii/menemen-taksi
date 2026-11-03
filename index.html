@@ -90,5 +90,14 @@ footer{text-align:center;color:#aaa;padding:25px 15px;font-size:13px}
 </main>
 <footer>© 2026 Menemen Taksi · Menemen, İzmir</footer>
 <a class="floating" href="tel:+905516311631">📞 TAKSİ ÇAĞIR</a>
+<script>
+document.querySelectorAll('a[href^="tel:"]').forEach(function(link) {
+  link.addEventListener('click', function() {
+    gtag('event', 'conversion', {
+      'send_to': 'AW-18310344319/tbnHCJfF9rAdEP_chptE'
+    });
+  });
+});
+</script>
 </body>
 </html>
